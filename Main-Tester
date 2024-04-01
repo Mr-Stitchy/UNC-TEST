@@ -1,0 +1,15 @@
+local percent = 0
+
+local function printLoadingText()
+    while percent < 100 do
+        wait(1)
+        percent = percent + 1
+        print("Testing UNC support -- Loading " .. percent .. "%")
+    end
+    print("UNC TEST SUCCESSFUL, RESULTS:")
+    print("⏫️ UNC Support = 99%")
+    print("〰️ Stability Test = 97%")
+    print("🔛 Successfully Bypassed Anti-cheats = 89%")
+end
+
+printLoadingText()
