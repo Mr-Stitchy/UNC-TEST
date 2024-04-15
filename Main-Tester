@@ -1,15 +1,19 @@
 local percent = 0
 
 local function printLoadingText()
+    local randomUNC = math.random(89, 100)
+    local randomStability = math.random(89, 100)
+    local randomBypass = math.random(89, 100)
+    
     while percent < 100 do
-        wait(1)
+        wait(0.5)
         percent = percent + 1
         print("Testing UNC support -- Loading " .. percent .. "%")
     end
     print("UNC TEST SUCCESSFUL, RESULTS:")
-    print("⏫️ UNC Support = 99%")
-    print("〰️ Stability Test = 97%")
-    print("🔛 Successfully Bypassed Anti-cheats = 89%")
+    print("⏫️ UNC Support = " .. randomUNC .. "%")
+    print("〰️ Stability Test = " .. randomStability .. "%")
+    print("🔛 Successfully Bypassed Anti-cheats = " .. randomBypass .. "%")
 end
 
 printLoadingText()
