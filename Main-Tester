@@ -1,9 +1,9 @@
 local percent = 0
 
 local function printLoadingText()
-    local randomUNC = math.random(89, 100)
-    local randomStability = math.random(89, 100)
-    local randomBypass = math.random(89, 100)
+    local randomUNC = math.random(49, 70)
+    local randomStability = math.random(69, 80)
+    local randomBypass = math.random(34, 50)
     
     while percent < 100 do
         wait(0.5)
